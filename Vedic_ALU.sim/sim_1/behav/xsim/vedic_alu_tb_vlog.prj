@@ -1,0 +1,32 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Vedic_ALU.srcs/sources_1/new/add_8_bit.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/column_1.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/column_10.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/column_11.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/column_12.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/column_13.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/column_14.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/column_2.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/column_3.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/column_4.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/column_5.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/column_6.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/column_7.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/column_8.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/column_9.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/div.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/fa.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/fs.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/ha.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/hs.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/mul_8_bit.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/sub_8_bit.v" \
+"../../../../Vedic_ALU.srcs/sources_1/new/vedic_alu.v" \
+"../../../../../../../Downloads/vedic_alu2/vedic_alu2.srcs/sim_1/new/vedic_alu_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

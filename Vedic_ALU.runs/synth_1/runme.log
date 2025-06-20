@@ -1,0 +1,388 @@
+
+*** Running vivado
+    with args -log vedic_alu.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vedic_alu.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source vedic_alu.tcl -notrace
+create_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 429.996 ; gain = 109.910
+Command: read_checkpoint -auto_incremental -incremental C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/utils_1/imports/synth_1/vedic_alu.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/utils_1/imports/synth_1/vedic_alu.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top vedic_alu -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16656
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1232.875 ; gain = 409.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vedic_alu' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/vedic_alu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'add_8_bit' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/add_8_bit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ha' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/ha.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ha' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/ha.v:2]
+INFO: [Synth 8-6157] synthesizing module 'fa' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/fa.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'fa' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/fa.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'add_8_bit' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/add_8_bit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'sub_8_bit' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/sub_8_bit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'fs' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/fs.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'fs' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/fs.v:2]
+INFO: [Synth 8-6157] synthesizing module 'hs' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/hs.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'hs' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/hs.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'sub_8_bit' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/sub_8_bit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'mul_8_bit' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/mul_8_bit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Column_1' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_1.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Column_1' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_1.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Column_2' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_2.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_2.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'Column_2' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_2.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Column_3' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_3.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Column_3' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_3.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Column_4' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_4.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_4.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'Column_4' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_4.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Column_5' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_5.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_5.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'Column_5' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_5.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Column_6' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_6.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_6.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'Column_6' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_6.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Column_7' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_7.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Column_7' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_7.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Column_8' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_8.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Column_8' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_8.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Column_9' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_9.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_9.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'Column_9' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_9.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Column_10' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_10.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_10.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'Column_10' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_10.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Column_11' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_11.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_11.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'Column_11' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_11.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Column_12' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_12.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Column_12' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_12.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Column_13' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_13.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_13.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'Column_13' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_13.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Column_14' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_14.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Column_14' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_14.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'mul_8_bit' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/mul_8_bit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'div' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/div.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'div' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/div.v:2]
+INFO: [Synth 8-226] default block is never used [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/vedic_alu.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'vedic_alu' (0#1) [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/vedic_alu.v:3]
+WARNING: [Synth 8-6014] Unused sequential element temp_dividend_reg was removed.  [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/div.v:20]
+WARNING: [Synth 8-6014] Unused sequential element temp_divisor_reg was removed.  [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/div.v:21]
+WARNING: [Synth 8-6014] Unused sequential element p1_reg was removed.  [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/div.v:22]
+WARNING: [Synth 8-6014] Unused sequential element Carry_reg was removed.  [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/vedic_alu.v:29]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1333.090 ; gain = 509.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1333.090 ; gain = 509.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1333.090 ; gain = 509.414
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1333.090 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/constrs_1/new/Const.xdc]
+Finished Parsing XDC File [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/constrs_1/new/Const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/constrs_1/new/Const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vedic_alu_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vedic_alu_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1442.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1442.379 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 1442.379 ; gain = 618.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 1442.379 ; gain = 618.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 1442.379 ; gain = 618.703
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'C1_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_2.v:15]
+WARNING: [Synth 8-327] inferring latch for variable 'C0_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_2.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'C3_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_4.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'C2_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_4.v:17]
+WARNING: [Synth 8-327] inferring latch for variable 'C1_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_4.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'C0_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_4.v:15]
+WARNING: [Synth 8-327] inferring latch for variable 'C4_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_5.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'C3_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_5.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'C2_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_5.v:17]
+WARNING: [Synth 8-327] inferring latch for variable 'C1_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_5.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'C0_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_5.v:15]
+WARNING: [Synth 8-327] inferring latch for variable 'C5_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_6.v:20]
+WARNING: [Synth 8-327] inferring latch for variable 'C4_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_6.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'C3_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_6.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'C2_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_6.v:17]
+WARNING: [Synth 8-327] inferring latch for variable 'C1_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_6.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'C0_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_6.v:15]
+WARNING: [Synth 8-327] inferring latch for variable 'C5_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_9.v:20]
+WARNING: [Synth 8-327] inferring latch for variable 'C4_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_9.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'C3_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_9.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'C2_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_9.v:17]
+WARNING: [Synth 8-327] inferring latch for variable 'C1_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_9.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'C0_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_9.v:15]
+WARNING: [Synth 8-327] inferring latch for variable 'C4_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_10.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'C3_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_10.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'C2_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_10.v:17]
+WARNING: [Synth 8-327] inferring latch for variable 'C1_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_10.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'C0_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_10.v:15]
+WARNING: [Synth 8-327] inferring latch for variable 'C3_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_11.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'C2_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_11.v:17]
+WARNING: [Synth 8-327] inferring latch for variable 'C1_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_11.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'C0_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_11.v:15]
+WARNING: [Synth 8-327] inferring latch for variable 'C1_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_13.v:15]
+WARNING: [Synth 8-327] inferring latch for variable 'C0_reg' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/column_13.v:16]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 1442.379 ; gain = 618.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input    9 Bit       Adders := 8     
+	   2 Input    8 Bit       Adders := 8     
+	   8 Input    4 Bit       Adders := 1     
+	  10 Input    4 Bit       Adders := 1     
+	  12 Input    4 Bit       Adders := 1     
+	  14 Input    4 Bit       Adders := 2     
+	  13 Input    4 Bit       Adders := 1     
+	  11 Input    4 Bit       Adders := 1     
+	   9 Input    4 Bit       Adders := 1     
+	   4 Input    3 Bit       Adders := 1     
+	   6 Input    3 Bit       Adders := 1     
+	   7 Input    3 Bit       Adders := 1     
+	   5 Input    3 Bit       Adders := 1     
+	   3 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 17    
+	   3 Input      1 Bit         XORs := 8     
+	   4 Input      1 Bit         XORs := 1     
+	   6 Input      1 Bit         XORs := 1     
+	   8 Input      1 Bit         XORs := 1     
+	  10 Input      1 Bit         XORs := 1     
+	  12 Input      1 Bit         XORs := 1     
+	  14 Input      1 Bit         XORs := 2     
+	  13 Input      1 Bit         XORs := 1     
+	  11 Input      1 Bit         XORs := 1     
+	   9 Input      1 Bit         XORs := 1     
+	   7 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 9     
+	   3 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 4     
+	   5 Input    1 Bit        Muxes := 8     
+	   6 Input    1 Bit        Muxes := 10    
+	   7 Input    1 Bit        Muxes := 12    
+	   8 Input    1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (U3/col2/C1_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col2/C0_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col4/C3_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col4/C2_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col4/C1_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col4/C0_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col5/C4_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col5/C3_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col5/C2_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col5/C1_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col5/C0_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col6/C5_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col6/C4_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col6/C3_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col6/C2_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col6/C1_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col6/C0_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col9/C5_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col9/C4_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col9/C3_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col9/C2_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col9/C1_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col9/C0_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col10/C4_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col10/C3_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col10/C2_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col10/C1_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col10/C0_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col11/C3_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col11/C2_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col11/C1_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col11/C0_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col13/C1_reg) is unused and will be removed from module vedic_alu.
+WARNING: [Synth 8-3332] Sequential element (U3/col13/C0_reg) is unused and will be removed from module vedic_alu.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:08 . Memory (MB): peak = 1442.379 ; gain = 618.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:16 ; elapsed = 00:01:23 . Memory (MB): peak = 1442.379 ; gain = 618.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:24 . Memory (MB): peak = 1442.379 ; gain = 618.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:16 ; elapsed = 00:01:24 . Memory (MB): peak = 1442.379 ; gain = 618.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:30 ; elapsed = 00:01:39 . Memory (MB): peak = 1442.379 ; gain = 618.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:01:39 . Memory (MB): peak = 1442.379 ; gain = 618.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:30 ; elapsed = 00:01:39 . Memory (MB): peak = 1442.379 ; gain = 618.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:30 ; elapsed = 00:01:39 . Memory (MB): peak = 1442.379 ; gain = 618.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:30 ; elapsed = 00:01:39 . Memory (MB): peak = 1442.379 ; gain = 618.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:30 ; elapsed = 00:01:39 . Memory (MB): peak = 1442.379 ; gain = 618.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    35|
+|3     |LUT1   |    22|
+|4     |LUT2   |    77|
+|5     |LUT3   |    54|
+|6     |LUT4   |    17|
+|7     |LUT5   |    23|
+|8     |LUT6   |    82|
+|9     |FDRE   |    50|
+|10    |IBUF   |    17|
+|11    |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:30 ; elapsed = 00:01:39 . Memory (MB): peak = 1442.379 ; gain = 618.703
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 69 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:05 ; elapsed = 00:01:34 . Memory (MB): peak = 1442.379 ; gain = 509.414
+Synthesis Optimization Complete : Time (s): cpu = 00:01:30 ; elapsed = 00:01:39 . Memory (MB): peak = 1442.379 ; gain = 618.703
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1442.379 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 35 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1442.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: e90afbba
+INFO: [Common 17-83] Releasing license: Synthesis
+78 Infos, 73 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:42 ; elapsed = 00:02:16 . Memory (MB): peak = 1442.379 ; gain = 988.523
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.runs/synth_1/vedic_alu.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vedic_alu_utilization_synth.rpt -pb vedic_alu_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 20 18:27:08 2025...

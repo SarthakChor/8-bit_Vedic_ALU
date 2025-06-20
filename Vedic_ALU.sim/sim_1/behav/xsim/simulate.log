@@ -1,0 +1,16 @@
+Time resolution is 1 ps
+Time =                    0, In1 =   0, In2 =   0, ALU_Sel = 00, ALU_Result =     x
+Time =                    5, In1 =   0, In2 =   0, ALU_Sel = 00, ALU_Result =     X
+Time =                   15, In1 =   0, In2 =   0, ALU_Sel = 00, ALU_Result =     0
+Time =                   20, In1 =  25, In2 =  25, ALU_Sel = 00, ALU_Result =     0
+Time =                   35, In1 =  25, In2 =  25, ALU_Sel = 00, ALU_Result =    50
+Time =                   40, In1 =  20, In2 =   7, ALU_Sel = 01, ALU_Result =    50
+Time =                   45, In1 =  20, In2 =   7, ALU_Sel = 01, ALU_Result =     0
+Time =                   55, In1 =  20, In2 =   7, ALU_Sel = 01, ALU_Result =    13
+Time =                   60, In1 = 127, In2 = 127, ALU_Sel = 10, ALU_Result =    13
+Time =                   65, In1 = 127, In2 = 127, ALU_Sel = 10, ALU_Result =   140
+Time =                   75, In1 = 127, In2 = 127, ALU_Sel = 10, ALU_Result = 16129
+Time =                   80, In1 =  30, In2 =   3, ALU_Sel = 11, ALU_Result = 16129
+Time =                   85, In1 =  30, In2 =   3, ALU_Sel = 11, ALU_Result =     1
+Time =                   95, In1 =  30, In2 =   3, ALU_Sel = 11, ALU_Result =    10
+$finish called at time : 130 ns : File "C:/Users/sarth/Downloads/vedic_alu2/vedic_alu2.srcs/sim_1/new/vedic_alu_tb.v" Line 40

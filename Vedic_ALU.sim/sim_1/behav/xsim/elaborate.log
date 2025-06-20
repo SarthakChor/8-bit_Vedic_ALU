@@ -1,0 +1,39 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vedic_alu_tb_behav xil_defaultlib.vedic_alu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'In1' [C:/Users/sarth/Downloads/vedic_alu2/vedic_alu2.srcs/sim_1/new/vedic_alu_tb.v:16]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'In2' [C:/Users/sarth/Downloads/vedic_alu2/vedic_alu2.srcs/sim_1/new/vedic_alu_tb.v:17]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'Sum' [C:/Users/sarth/Documents/Mini_Project/Vedic_ALU/Vedic_ALU.srcs/sources_1/new/vedic_alu.v:20]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ha
+Compiling module xil_defaultlib.fa
+Compiling module xil_defaultlib.add_8_bit
+Compiling module xil_defaultlib.hs
+Compiling module xil_defaultlib.fs
+Compiling module xil_defaultlib.sub_8_bit_default
+Compiling module xil_defaultlib.Column_1
+Compiling module xil_defaultlib.Column_2
+Compiling module xil_defaultlib.Column_3
+Compiling module xil_defaultlib.Column_4
+Compiling module xil_defaultlib.Column_5
+Compiling module xil_defaultlib.Column_6
+Compiling module xil_defaultlib.Column_7
+Compiling module xil_defaultlib.Column_8
+Compiling module xil_defaultlib.Column_9
+Compiling module xil_defaultlib.Column_10
+Compiling module xil_defaultlib.Column_11
+Compiling module xil_defaultlib.Column_12
+Compiling module xil_defaultlib.Column_13
+Compiling module xil_defaultlib.Column_14
+Compiling module xil_defaultlib.mul_8_bit
+Compiling module xil_defaultlib.div
+Compiling module xil_defaultlib.vedic_alu
+Compiling module xil_defaultlib.vedic_alu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot vedic_alu_tb_behav
