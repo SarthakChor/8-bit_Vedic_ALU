@@ -93,34 +93,6 @@ The complete design was synthesized and implemented on the **Spartan-7 FPGA**. T
 
 ---
 
-## Project Structure
-
-```
-8-bit-Vedic-ALU/
-│
-├── src/
-│   ├── ALU.v
-│   ├── Adder.v
-│   ├── Subtractor.v
-│   ├── VedicMultiplier.v
-│   ├── Divider.v
-│   └── Top.v
-│
-├── testbench/
-│   └── ALU_tb.v
-│
-├── constraints/
-│   └── BooleanBoard.xdc
-│
-├── images/
-│
-└── README.md
-```
-
-> Folder names may differ depending on your project organization.
-
----
-
 ## Simulation
 
 Behavioral simulation was carried out using **Vivado Simulator** to verify the functionality of all supported operations.
@@ -178,21 +150,3 @@ This project demonstrates practical knowledge of:
 
 ---
 
-## Author
-
-**Sarthak Chor**
-
-Bachelor of Engineering (Electronics & Telecommunication)
-
-**Areas of Interest**
-- Digital VLSI Design
-- RTL Design
-- FPGA Design
-- Verilog/SystemVerilog
-- Computer Architecture
-
----
-
-## License
-
-This project is intended for educational and research purposes. Feel free to use, modify, and extend the design with proper attribution.
